@@ -1,0 +1,7 @@
+<section routerLink="/contacts/{{ contact._id }}">
+    <h1>{{contact.name}}</h1>
+    <h2>{{contact.email}}</h2>
+    <h3>{{contact.phone}}</h3>
+</section>
+<button (click)="onRemoveContact()">remove</button>
+<button [routerLink]="['/contacts', 'edit', contact._id]">Edit</button>
